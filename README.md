@@ -1,3 +1,69 @@
+# change
+
+## android bug
+
+### bug 1
+
+
+error: no method compile
+
+./android/build.gradle
+
+Gradle higher version compile becomes implementation
+
+dependencies {
+  compile 'com.facebook.react:react-native:+'
+  compile 'com.aliyun.dpa:oss-android-sdk:+'
+}
+
+to
+
+dependencies {
+  implementation 'com.facebook.react:react-native:+'
+  implementation 'com.aliyun.dpa:oss-android-sdk:+'
+}
+
+### bug 2
+
+
+error: no such file or directory (file:///data/user/0/..... /storage/emulated/0/.....)
+
+./android/src/main/java/com/reactlibrary/AliyunUploadManager.java
+
+fix asyncUpload method
+
+Added a new line of code
+
+```
+  sourceFile = sourceFile.replace("file:///", "/");
+```
+
+
+The following codes are commented
+
+```
+        //Cursor cursor = null;
+        //try {
+        //    String[] proj = {MediaStore.Images.Media.DATA};
+        //    cursor = context.getCurrentActivity().getContentResolver().query(selectedVideoUri, proj, null, null, null);
+        //    if (cursor == null) sourceFile = selectedVideoUri.getPath();
+        //    int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        //    cursor.moveToFirst();
+        //    sourceFile = cursor.getString(column_index);
+        //} catch (Exception e) {
+        //    sourceFile = FileUtils.getFilePathFromURI(context.getCurrentActivity(), selectedVideoUri);
+        //} finally {
+        //    if (cursor != null) {
+        //        cursor.close();
+        //    }
+        //}
+```
+
+
+
+
+
+
 # Alibaba Cloud OSS SDK for React Native
 
 ## [README of Chinese](https://github.com/aliyun/aliyun-oss-react-native/blob/master/README-CN.md)
