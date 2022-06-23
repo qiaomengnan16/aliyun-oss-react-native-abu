@@ -9,7 +9,7 @@ error: no method compile
 
 ./android/build.gradle
 
-Gradle higher version compile becomes implementation
+in the higher version of gradle, implementation substitute compile as an expression
 
 dependencies {
   compile 'com.facebook.react:react-native:+'
