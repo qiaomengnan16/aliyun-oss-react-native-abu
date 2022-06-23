@@ -37,12 +37,12 @@ NOTE: THIS PACKAGE IS NOW BUILT FOR REACT NATIVE 0.40 OR GREATER
 * npm
 
 ```
-npm install aliyun-oss-react-native --save
+npm install aliyun-oss-react-native-abu --save
 ```
 * yarn
 
 ```
-yarn install aliyun-oss-react-native --save
+yarn install aliyun-oss-react-native-abu --save
 ```
 
 ### Automatic Installation
@@ -50,7 +50,7 @@ yarn install aliyun-oss-react-native --save
 run `react-native link` in the react native project
 
 ```
-react-native link aliyun-oss-react-native
+react-native link aliyun-oss-react-native-abu
 ```
 
 `Note`：for suppport IPv6-Only networkd，you need to require :
@@ -67,14 +67,14 @@ react-native link aliyun-oss-react-native
 - **CocoaPods**
 
 ```
-pod 'aliyun-oss-react-native', :path => '../node_modules/aliyun-oss-react-native'
+pod 'aliyun-oss-react-native-abu', :path => '../node_modules/aliyun-oss-react-native-abu'
 ````
 
 - **no CocoaPods**
 
-1. In the XCode's "Project navigator", right click on your project's Libraries folder ➜ `Add Files to <...>` Go to `node_modules` ➜ `aliyun-oss-react-native` ➜ `ios` ➜ select `RNAliyunOSS.xcodeproj`
+1. In the XCode's "Project navigator", right click on your project's Libraries folder ➜ `Add Files to <...>` Go to `node_modules` ➜ `aliyun-oss-react-native-abu` ➜ `ios` ➜ select `RNAliyunOSS.xcodeproj`
 2. Add `libRNAliyunOSS.a` to `Build Phases -> Link Binary With Libraries`
-3. In XCode, in the project navigator, right click `Frameworks` ➜ `Add Files to [your project's name]`. Go to `node_modules` ➜ `aliyun-oss-react-native` ➜ `AliyunSDK`. Add `AliyunOSSiOS.framework`, and select *Copy items if needed* in the pop-up box.
+3. In XCode, in the project navigator, right click `Frameworks` ➜ `Add Files to [your project's name]`. Go to `node_modules` ➜ `aliyun-oss-react-native-abu` ➜ `AliyunSDK`. Add `AliyunOSSiOS.framework`, and select *Copy items if needed* in the pop-up box.
 
 #### Android
 1. Add the following lines to `android/settings.gradle`:
@@ -87,7 +87,7 @@ project(':react-native-react-sdk').projectDir = new File(rootProject.projectDir,
 2. Add the compile line to the dependencies in `android/app/build.gradle`:
 ```gradle
 dependencies {
-  compile project(':aliyun-oss-react-native')
+  compile project(':aliyun-oss-react-native-abu')
 }
 ```
 3. Add the required permissions in `AndroidManifest.xml`:
@@ -119,7 +119,7 @@ Now ,all the API returns Promise Object exception init OSS Client API and enable
 
 * step-1:import AliyunOSS
 ```
-import AliyunOSS from 'aliyun-oss-react-native'
+import AliyunOSS from 'aliyun-oss-react-native-abu'
 ```
 * step-2:open debug mode  (optional)
 
@@ -400,7 +400,7 @@ In the repository, we prodive RN SDK DEMO in the Example folder including andrio
 * step-1:clone the project and install some dependencies
 
 ```
-1. git clone https://github.com/aliyun/aliyun-oss-react-native.git
+1. git clone https://github.com/qiaomengnan16/aliyun-oss-react-native-abu.git
 2. cd Example
 3. npm install
 ```
