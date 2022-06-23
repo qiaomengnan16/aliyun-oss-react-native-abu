@@ -11,17 +11,21 @@ error: no method compile
 
 in the higher version of gradle, implementation substitute compile as an expression
 
-dependencies {
-  compile 'com.facebook.react:react-native:+'
-  compile 'com.aliyun.dpa:oss-android-sdk:+'
-}
+```
+  dependencies {
+    compile 'com.facebook.react:react-native:+'
+    compile 'com.aliyun.dpa:oss-android-sdk:+'
+  }
+```
 
 to
 
-dependencies {
-  implementation 'com.facebook.react:react-native:+'
-  implementation 'com.aliyun.dpa:oss-android-sdk:+'
-}
+```
+  dependencies {
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
+  }
+```
 
 ### bug 2
 
